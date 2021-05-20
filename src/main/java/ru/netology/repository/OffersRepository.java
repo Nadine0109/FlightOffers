@@ -7,7 +7,7 @@ public class OffersRepository {
 
     public void save(FlightOffer ticket) {
         int length = tickets.length + 1;
-        FlightOffer [] tmp = new FlightOffer[length];
+        FlightOffer[] tmp = new FlightOffer[length];
         System.arraycopy(tickets, 0, tmp, 0, tickets.length);
         int lastIndex = tmp.length - 1;
         tmp[lastIndex] = ticket;

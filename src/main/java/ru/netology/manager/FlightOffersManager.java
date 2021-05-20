@@ -3,6 +3,7 @@ package ru.netology.manager;
 import ru.netology.domain.FlightOffer;
 import ru.netology.repository.NotFoundException;
 import ru.netology.repository.OffersRepository;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +32,7 @@ public class FlightOffersManager {
         }
         FlightOffer[] result = validTickets.toArray(new FlightOffer[0]);
         if (result.length == 0) {
-            throw new NotFoundException ("No tickets from " + from +" to " + to + " were found");
+            throw new NotFoundException("No tickets from " + from + " to " + to + " were found");
         }
 
         Arrays.sort(result);
